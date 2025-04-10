@@ -20,7 +20,7 @@
   </head>
   <body class="font-sans text-gray-800">
     <header
-      class="fixed w-full top-0 left-0 z-50 bg-white text-primary bg-opacity-95 shadow-sm"
+      class="fixed w-full top-0 left-0 z-50  bg-opacity-95 shadow-sm"
     >
       <div class="container mx-auto px-4">
         <nav class="flex justify-between items-center py-4">
@@ -31,21 +31,21 @@
             <li>
               <a
                 href="#about"
-                class="font-medium hover:text-primary transition-colors"
+                class="font-medium  transition-colors"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#projects"
-                class="font-medium hover:text-primary transition-colors"
+                class="font-medium  transition-colors"
                 >Projects</a
               >
             </li>
             <li>
               <a
                 href="#contact"
-                class="font-medium hover:text-primary transition-colors"
+                class="font-medium  transition-colors"
                 >Contact</a
               >
             </li>
@@ -83,7 +83,7 @@
     </section>
 
     <!-- About Section with Tailwind -->
-    <section id="about" class="py-20">
+    <section id="about" class="about py-20">
       <div class="container mx-auto px-4">
         <h2
           class="section-title text-3xl md:text-4xl font-bold text-center mb-16"
@@ -105,45 +105,36 @@
               practices.
             </p>
             <h3 class="text-2xl font-semibold mb-4">Skills</h3>
-            <ul class="flex flex-wrap gap-3 font-semibold">
-              <li class="bg-orange-700 px-4 py-2 rounded-full text-sm">HTML5</li>
-              <li class="bg-blue-500 px-4 py-2 rounded-full text-sm">CSS3</li>
-              <li class="bg-yellow-500 px-4 py-2 rounded-full text-sm">
-                JavaScript
-              </li>
-              <li class="bg-blue-700 px-4 py-2 rounded-full text-sm">
-                TypeScript
-              </li>
-              <li class="bg-purple-800 px-4 py-2 rounded-full text-sm">
-                .NET
-              </li>
-              <li class="bg-blue-300 px-4 py-2 rounded-full text-sm">
-                Tailwind
-              </li>
-              <li class="bg-light px-4 py-2 rounded-full text-sm">
-                Responsive Design
-              </li>
-              <li class="bg-light px-4 py-2 rounded-full text-sm">
-                UI/UX Principles
-              </li>
+            <ul class=" flex flex-wrap gap-3 font-semibold">
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/html-icon.png" alt=""></li>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/css-icon.png" alt=""></li>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/js-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/ts-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/node-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/tailwinds-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/react-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/Boot-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/cs-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/dotnet-icon.png" alt=""></i>
+              <li class=" px-4 py-2 rounded-full text-sm"><img src="./img/git-icon.png" alt=""></i>
             </ul>
           </div>
           <div class="md:w-1/2 text-center">
             <img
               src="img/profile.jpeg"
               alt="Profile Picture"
-              class="max-w-xs md:max-w-sm mx-auto rounded-lg shadow-lg"
+              class="max-w-xs md:max-w-sm mx-auto rounded-full shadow-lg radius-lg"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section with Tailwind -->
-    <section id="projects" class="py-20 bg-light">
+    
+    <section id="projects" class="projects py-20">
       <div class="container mx-auto px-4">
         <h2
-          class="section-title text-3xl md:text-4xl font-bold text-center mb-16"
+          class="section-title text-3xl md:text-4xl font-bold text-center mb-16 text-white"
         >
           Projects
         </h2>
@@ -221,6 +212,42 @@
             </div>
           </div>
 
+          <!--Project 3.2-->
+          <div
+          class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2"
+        >
+          <div class="h-48 overflow-hidden">
+            <img
+              src="img/project2.jpg"
+              alt="Project 2"
+              class="w-full h-full object-cover transition-transform hover:scale-110"
+            />
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-3">App Movie Search</h3>
+            <p class="text-gray-600 mb-4">
+              The Movie Search App is a web application built with React,
+              TypeScript, and TMDb API that allows users to search for movies
+              in real time. It displays movie titles, descriptions, and
+              posters, and features a simple and clean UI styled with custom
+              CSS.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="https://github.com/KarlangaXZ/app-movieSearch.git"
+                target="_blank"
+                class="text-primary font-medium hover:text-blue-700 transition-colors"
+                ><i class="fab fa-github mr-2"></i> Code</a
+              >
+              <a
+                href="https://karlangaxz-moviesearch.netlify.app/"
+                target="_blank"
+                class="text-primary font-medium hover:text-blue-700 transition-colors"
+                ><i class="fas fa-external-link-alt mr-2"></i> Live</a
+              >
+            </div>
+          </div>
+        </div>
           <!-- Project 3 -->
           <div
             class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2"
@@ -257,7 +284,7 @@
       </div>
     </section>
 
-    <!-- Contact Section with Tailwind -->
+
     <section id="contact" class="py-20">
       <div class="container mx-auto px-4">
         <h2
@@ -275,7 +302,7 @@
               <a
                 href="mailto:your.email@example.com"
                 class="text-blue-600 hover:underline"
-                >your.email@example.com</a
+                >Carlos.Josewin@gmail.com</a
               >
             </div>
             <div class="flex gap-4 mt-8">
@@ -296,9 +323,9 @@
               <a
                 href="#"
                 target="_blank"
-                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                class="w-10 h-100 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
               >
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
               </a>
             </div>
           </div>
