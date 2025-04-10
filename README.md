@@ -31,10 +31,8 @@ Check out the live portfolio here:
 👉 [karlangaxz.github.io/My_Portafolio](https://karlangaxz.github.io/My_Portafolio/)
 
 ## 📩 Contact
-
-- **Email**: [Your email here]
-- **LinkedIn**: [Your LinkedIn here if you want to add it]
-- **GitHub**: [https://github.com/Karlangaxz](https://github.com/Karlangaxz)
+- **LinkedIn**: [[Carlos Linares](https://www.linkedin.com/in/carlosjlinares/)]
+- **GitHub**: [Karlangaxz](https://github.com/Karlangaxz)
 
 ---
 
