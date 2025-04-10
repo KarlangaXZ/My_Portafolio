@@ -6,7 +6,7 @@
 # Archivos de compilación
 /dist
 /build
-/css/tailwind.css
+
 
 # Archivos de entorno
 .env
