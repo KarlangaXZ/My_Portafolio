@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,148 +15,240 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
+  <body class="font-sans text-gray-800">
+    <header
+      class="fixed w-full top-0 left-0 z-50 bg-white text-primary bg-opacity-95 shadow-sm"
+    >
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between items-center py-4">
           <div class="logo">
-            <a href="#">Portfolio</a>
+            <a href="#" class="text-2xl font-bold text-primary">Portfolio</a>
           </div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="nav-links hidden md:flex space-x-8">
+            <li>
+              <a
+                href="#about"
+                class="font-medium hover:text-primary transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="font-medium hover:text-primary transition-colors"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="font-medium hover:text-primary transition-colors"
+                >Contact</a
+              >
+            </li>
           </ul>
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="hamburger md:hidden cursor-pointer">
+            <span class="block w-6 h-0.5 bg-dark mb-1.5"></span>
+            <span class="block w-6 h-0.5 bg-dark mb-1.5"></span>
+            <span class="block w-6 h-0.5 bg-dark"></span>
           </div>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-          <h2>Frontend Developer</h2>
-          <p>
-            I build exceptional and accessible digital experiences for the web.
+    <!-- Hero Section with Tailwind -->
+    <section class="hero min-h-screen flex items-center pt-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Hello, I'm
+            <span class="text-primary">&#60;Carlos Linares&#62; </span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl text-primary mb-6">
+            FullStack Developer
+          </h2>
+          <p class="text-xl text-secondary mb-8">
+            The biggest wall that you need climb is the one that build in your
+            mind, SO POWER!.
           </p>
-          <div class="cta-buttons">
-            <a href="#projects" class="btn primary-btn">View Projects</a>
-            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Contact Me</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
+    <!-- About Section with Tailwind -->
+    <section id="about" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2
+          class="section-title text-3xl md:text-4xl font-bold text-center mb-16"
+        >
+          About Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="md:w-1/2">
+            <p class="mb-6 text-lg">
               I'm a passionate frontend developer with a strong foundation in
               HTML, CSS, and JavaScript. I enjoy creating responsive and
               user-friendly websites that provide great user experiences.
             </p>
-            <p>
-              My journey in web development started in [Year], and since then,
-              I've been constantly learning and improving my skills to stay
-              up-to-date with the latest technologies and best practices.
+            <p class="mb-6 text-lg">
+              My web development journey began in 2022 after I decided to
+              transition from a sales and accounting career to a web developer.
+              Since then, I've been constantly learning and improving my skills
+              to stay up-to-date with the latest technologies and best
+              practices.
             </p>
-            <h3>Skills</h3>
-            <ul class="skills-list">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Responsive Design</li>
-              <li>UI/UX Principles</li>
+            <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+            <ul class="flex flex-wrap gap-3 font-semibold">
+              <li class="bg-orange-700 px-4 py-2 rounded-full text-sm">HTML5</li>
+              <li class="bg-blue-500 px-4 py-2 rounded-full text-sm">CSS3</li>
+              <li class="bg-yellow-500 px-4 py-2 rounded-full text-sm">
+                JavaScript
+              </li>
+              <li class="bg-blue-700 px-4 py-2 rounded-full text-sm">
+                TypeScript
+              </li>
+              <li class="bg-purple-800 px-4 py-2 rounded-full text-sm">
+                .NET
+              </li>
+              <li class="bg-blue-300 px-4 py-2 rounded-full text-sm">
+                Tailwind
+              </li>
+              <li class="bg-light px-4 py-2 rounded-full text-sm">
+                Responsive Design
+              </li>
+              <li class="bg-light px-4 py-2 rounded-full text-sm">
+                UI/UX Principles
+              </li>
             </ul>
           </div>
-          <div class="about-image">
-            <img src="img/profile.jpeg" alt="Profile Picture" />
+          <div class="md:w-1/2 text-center">
+            <img
+              src="img/profile.jpeg"
+              alt="Profile Picture"
+              class="max-w-xs md:max-w-sm mx-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="img/project1.jpg" alt="Project 1" />
+    <!-- Projects Section with Tailwind -->
+    <section id="projects" class="py-20 bg-light">
+      <div class="container mx-auto px-4">
+        <h2
+          class="section-title text-3xl md:text-4xl font-bold text-center mb-16"
+        >
+          Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="img/project1.jpg"
+                alt="Project 1"
+                class="w-full h-full object-cover transition-transform hover:scale-110"
+              />
             </div>
-            <div class="project-info">
-              <h3>Karlangaxz Twitter Clone</h3>
-              <p>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">Karlangaxz Twitter Clone</h3>
+              <p class="text-gray-600 mb-4">
                 Twitter Clone is a project that simulates the user interface of
                 Twitter. This clone includes home pages, login pages, and a news
                 feed, as well as functionalities such as posting messages and
-                managing accounts..
+                managing accounts.
               </p>
-              <div class="project-links">
+              <div class="flex gap-4">
                 <a
                   href="https://github.com/KarlangaXZ/Project-twitter-clone.git"
                   target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fab fa-github mr-2"></i> Code</a
                 >
                 <a
                   href="https://karlangaxz.github.io/Project-twitter-clone/"
                   target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live</a
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fas fa-external-link-alt mr-2"></i> Live</a
                 >
               </div>
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img src="img/project2.jpg" alt="Project 2" />
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="img/project2.jpg"
+                alt="Project 2"
+                class="w-full h-full object-cover transition-transform hover:scale-110"
+              />
             </div>
-            <div class="project-info">
-              <h3>App Movie Search</h3>
-              <p>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">App Movie Search</h3>
+              <p class="text-gray-600 mb-4">
                 The Movie Search App is a web application built with React,
                 TypeScript, and TMDb API that allows users to search for movies
                 in real time. It displays movie titles, descriptions, and
                 posters, and features a simple and clean UI styled with custom
-                CSS. The app fetches data from the external TMDb API and
-                provides a smooth search experience for users
+                CSS.
               </p>
-              <div class="project-links">
+              <div class="flex gap-4">
                 <a
                   href="https://github.com/KarlangaXZ/app-movieSearch.git"
                   target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fab fa-github mr-2"></i> Code</a
                 >
                 <a
                   href="https://karlangaxz-moviesearch.netlify.app/"
                   target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live</a
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fas fa-external-link-alt mr-2"></i> Live</a
                 >
               </div>
             </div>
           </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img src="img/project3.jpg" alt="Project 3" />
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-2"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="img/project3.jpg"
+                alt="Project 3"
+                class="w-full h-full object-cover transition-transform hover:scale-110"
+              />
             </div>
-            <div class="project-info">
-              <h3>Project Title 3</h3>
-              <p>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">Project Title 3</h3>
+              <p class="text-gray-600 mb-4">
                 A brief description of the project and the technologies used.
               </p>
-              <div class="project-links">
-                <a href="#" target="_blank"
-                  ><i class="fab fa-github"></i> Code</a
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fab fa-github mr-2"></i> Code</a
                 >
-                <a href="#" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Live</a
+                <a
+                  href="#"
+                  target="_blank"
+                  class="text-primary font-medium hover:text-blue-700 transition-colors"
+                  ><i class="fas fa-external-link-alt mr-2"></i> Live</a
                 >
               </div>
             </div>
@@ -163,50 +257,98 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <p>
+    <!-- Contact Section with Tailwind -->
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-4">
+        <h2
+          class="section-title text-3xl md:text-4xl font-bold text-center mb-16 text-blue-800"
+        >
+          Contact Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <p class="text-lg mb-8">
               Feel free to reach out to me for collaboration or just to say hi!
             </p>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-envelope text-blue-600 mr-3"></i>
+              <a
+                href="mailto:your.email@example.com"
+                class="text-blue-600 hover:underline"
+                >your.email@example.com</a
+              >
             </div>
-            <div class="social-links">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="flex gap-4 mt-8">
+              <a
+                href="#"
+                target="_blank"
+                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
             </div>
           </div>
-          <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+          <form class="md:w-1/2">
+            <div class="mb-6">
+              <label for="name" class="block mb-2 font-medium">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:outline-none focus:border-blue-600"
+              />
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+            <div class="mb-6">
+              <label for="email" class="block mb-2 font-medium">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:outline-none focus:border-blue-600"
+              />
             </div>
-            <div class="form-group">
-              <label for="message">Message</label>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 font-medium"
+                >Message</label
+              >
               <textarea
                 id="message"
                 name="message"
                 rows="5"
                 required
+                class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:outline-none focus:border-blue-600"
               ></textarea>
             </div>
-            <button type="submit" class="btn primary-btn">Send Message</button>
+            <button
+              type="submit"
+              class="btn-primary bg-blue-600 hover:bg-blue-700"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
+    <!-- Footer with Tailwind -->
+    <footer class="bg-blue-900 text-white py-8 text-center">
+      <div class="container mx-auto px-4">
         <p>&copy; 2023 Your Name. All rights reserved.</p>
       </div>
     </footer>
