@@ -7,7 +7,6 @@
 /dist
 /build
 
-
 # Archivos de entorno
 .env
 .env.local
