@@ -142,10 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projectTitles[2]) projectTitles[2].textContent = 'Buscador de Películas';
     if (projectDescriptions[2]) projectDescriptions[2].textContent = 'La aplicación de búsqueda de películas es una aplicación web construida con React, TypeScript y la API de TMDb que permite a los usuarios buscar películas en tiempo real. Muestra títulos de películas, descripciones y carteles, y presenta una interfaz de usuario simple y limpia estilizada con CSS personalizado.';
     
-    // Mangalos Pokemon
-    if (projectTitles[3]) projectTitles[3].textContent = 'Mangalos Pokémon';
-    if (projectDescriptions[3]) projectDescriptions[3].textContent = 'Mangalos es un juego inspirado en el universo Pokémon, donde cada criatura tiene una forma única basada en su tipo. Los jugadores pueden elegir entre 30 Pokémon iniciales de tipos Fuego, Planta o Agua para comenzar su aventura. El sitio ofrece una descarga directa del juego, un tráiler que muestra el gameplay y una experiencia centrada en la exploración donde la personalización y evolución de los Pokémon son características clave.';
+     // product-list-with-cart-main
+     if (projectTitles[3]) projectTitles[3].textContent = 'lista de productos con carrito principal';
+     if (projectDescriptions[3]) projectDescriptions[3].textContent = 'Lista de Productos con Carrito es una sencilla aplicación web que permite a los usuarios ver una lista de productos y añadirlos al carrito de compra. El objetivo principal es demostrar cómo gestionar dinámicamente el contenido del carrito utilizando HTML, CSS y JavaScript puros (sin frameworks ni bibliotecas externas).';
+     
+      // Mangalos Pokemon
+    if (projectTitles[4]) projectTitles[4].textContent = 'Mangalos Pokémon';
+    if (projectDescriptions[4]) projectDescriptions[4].textContent = 'Mangalos es un juego inspirado en el universo Pokémon, donde cada criatura tiene una forma única basada en su tipo. Los jugadores pueden elegir entre 30 Pokémon iniciales de tipos Fuego, Planta o Agua para comenzar su aventura. El sitio ofrece una descarga directa del juego, un tráiler que muestra el gameplay y una experiencia centrada en la exploración donde la personalización y evolución de los Pokémon son características clave.';
     
+
     // Update code/live text
     for (let i = 0; i < projectLinks.length; i++) {
       if (projectLinks[i].innerHTML.includes('fa-github')) {
@@ -206,11 +211,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Movie Search
     if (projectTitles[2]) projectTitles[2].textContent = 'App Movie Search';
     if (projectDescriptions[2]) projectDescriptions[2].textContent = 'The Movie Search App is a web application built with React, TypeScript, and TMDb API that allows users to search for movies in real time. It displays movie titles, descriptions, and posters, and features a simple and clean UI styled with custom CSS.';
+   
+    // product-list-with-cart-main
+   if (projectTitles[3]) projectTitles[3].textContent = 'Product List with Cart';
+   if (projectDescriptions[3]) projectDescriptions[3].textContent = 'Product List with Cart is a simple web application that allows users to view a list of products and add them to a shopping cart. The main focus is to demonstrate how to dynamically manage cart content using pure HTML, CSS, and JavaScript ';
+   
     
     // Mangalos Pokemon
-    if (projectTitles[3]) projectTitles[3].textContent = 'Mangalos Pokemon';
-    if (projectDescriptions[3]) projectDescriptions[3].textContent = 'Mangalos is a game inspired by the Pokémon universe, where each creature has a unique form based on its type. Players can choose from 30 starter Pokémon of Fire, Grass, or Water types to begin their adventure. The site offers a direct game download, a trailer showcasing gameplay, and an exploration-focused experience where Pokémon customization and evolution are key features.';
+    if (projectTitles[4]) projectTitles[4].textContent = 'Mangalos Pokemon';
+    if (projectDescriptions[4]) projectDescriptions[4].textContent = 'Mangalos is a game inspired by the Pokémon universe, where each creature has a unique form based on its type. Players can choose from 30 starter Pokémon of Fire, Grass, or Water types to begin their adventure. The site offers a direct game download, a trailer showcasing gameplay, and an exploration-focused experience where Pokémon customization and evolution are key features.';
     
+    
+
     // Update code/live text
     for (let i = 0; i < projectLinks.length; i++) {
       if (projectLinks[i].innerHTML.includes('fa-github')) {
