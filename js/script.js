@@ -84,6 +84,8 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScrollAnimation();
 });
 
+
+
 //traslate
    // Translation functionality
    document.addEventListener('DOMContentLoaded', function() {

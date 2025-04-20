@@ -241,6 +241,29 @@ nav {
     color: var(--secondary-color);
 }
 
+.typewriter{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 255, 55);
+    font-family: monospace;
+    font-size: 0.9em;
+    animation: typing 4s steps(10, end)forwards, blink .2s  infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+
+    40% { width: 60%; }
+    60% { width: 0%; }
+    100% { width: 62%; }
+}
+
+@keyframes blink {
+    from { border-color: rgb(0, 57, 245); }
+    to { border-color: transparent; }
+}
+
 .highlight {
     color: var(--primary-color);
 }
