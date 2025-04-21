@@ -49,6 +49,14 @@ window.addEventListener('scroll', () => {
     handleScrollAnimation();
 });
 
+// cv button
+const cvButton = document.getElementById('cv-btn');
+
+cvButton.addEventListener('click', () => {
+ window.open('https://drive.google.com/file/d/1DeZ-q_O8suHEzfFo30Fz2aeraJTBnjqP/view?usp=drive_link','target="_blank"');
+
+})
+
 // Form Submission
 const contactForm = document.querySelector('.contact-form');
 
